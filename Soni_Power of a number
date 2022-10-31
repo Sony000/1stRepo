@@ -1,0 +1,18 @@
+#include<stdio.h>
+int power(int,int);
+main()
+{
+	int b,exp;
+	printf("Enter the values of base and exponent:\n");
+	scanf("%d%d",&b,&exp);
+	power(b,exp);
+}
+int power(int b,int exp)
+{
+	int val=1;
+	for(int i=0;i<exp;i++)
+	{
+		val=val*b;
+	}
+	printf("The value of %d to the power %d is=%d",b,exp,val);
+  }
